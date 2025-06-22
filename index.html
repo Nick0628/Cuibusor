@@ -23,7 +23,7 @@
       z-index: 1000;
     }
     header img {
-      width: 240px;
+      width: 180px;
       margin-bottom: 5px;
     }
     header h1 {
@@ -48,19 +48,6 @@
       max-width: 900px;
       margin: auto;
     }
-    footer {
-      background-color: #e6d5b8;
-      padding: 20px;
-      font-size: 14px;
-    }
-
-    @media screen and (max-width: 600px) {
-      nav a {
-        display: block;
-        margin: 10px 0;
-      }
-    }
-  
     button {
       background-color: #8b5e3c;
       color: white;
@@ -74,8 +61,33 @@
     button:hover {
       background-color: #734a30;
     }
-    </style>
-    
+    footer {
+      background-color: #e6d5b8;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 600px) {
+      header h1 {
+        font-size: 1.5em;
+      }
+      header img {
+        width: 160px;
+      }
+      nav a {
+        display: block;
+        margin: 10px 0;
+        font-size: 1.1em;
+      }
+      section {
+        padding: 30px 10px;
+      }
+      button {
+        width: 90%;
+        max-width: 300px;
+      }
+    }
+  </style>
 </head>
 <body>
 
@@ -91,26 +103,22 @@
 
 <section id="despre">
   <h2>Despre noi</h2>
-  <p>Oferim ouă de prepeliță naturale, dintr-un cuibușor autentic, de la pasari hranite biologic, pentru un stil de viață sănătos și gustos.</p>
+  <p>Oferim ouă de prepeliță naturale, dintr-un cuibușor autentic, pentru un stil de viață sănătos și gustos.</p>
 </section>
 
 <section id="produse">
   <h2>Produsele noastre</h2>
-  
-    <div>
-      <p>Avem ouă proaspete de prepeliță, ambalate cu grijă.</p>
-      <button onclick="window.location.href='#contact'">Comandă acum</button>
-    </div>
-    
+  <div>
+    <p>Avem ouă proaspete de prepeliță, ambalate cu grijă.</p>
+    <button onclick="window.location.href='#contact'">Comandă acum</button>
+  </div>
 </section>
 
 <section id="contact">
   <h2>Contact</h2>
-  
-    <p>Scrie-ne pe WhatsApp sau Instagram pentru comenzi și informații.</p>
-    <button onclick="window.open('https://wa.me/40712345678', '_blank')">WhatsApp</button>
-    <button onclick="window.open('https://instagram.com/cuibusor', '_blank')">Instagram</button>
-    
+  <p>Scrie-ne pe WhatsApp sau Instagram pentru comenzi și informații.</p>
+  <button onclick="window.open('https://wa.me/40712345678', '_blank')">WhatsApp</button>
+  <button onclick="window.open('https://instagram.com/cuibusor', '_blank')">Instagram</button>
 </section>
 
 <footer>
