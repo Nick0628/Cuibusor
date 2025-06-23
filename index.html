@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <title>Cuibușor de Prepeliță</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: url('background.jpg') bottom no-repeat;
+            background-size: cover;
+            background-color: #a3d977;
+        }
+        header {
+            background-color: #a3d977;
+            text-align: center;
+            padding: 20px;
+        }
+        header img {
+            height: 120px;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        .content {
+            background-color: rgba(163, 217, 119, 0.6);
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            max-width: 600px;
+            display: none;
+        }
+        .show {
+            display: block;
+        }
+        .button {
+            background-color: #8B4513;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            margin: 10px;
+            cursor: pointer;
+            font-size: 16px;
+            border-radius: 5px;
+        }
+    </style>
+    <script>
+        function toggleSection(id) {
+            document.querySelectorAll('.content').forEach(el => el.classList.remove('show'));
+            document.getElementById(id).classList.add('show');
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <img src="logo.png" alt="Logo Cuibușor de Prepeliță">
+        <h1>Cuibușor de Prepeliță</h1>
+        <nav>
+            <button class="button" onclick="toggleSection('despre')">Despre</button>
+            <button class="button" onclick="toggleSection('produse')">Produse</button>
+            <button class="button" onclick="toggleSection('contact')">Contact</button>
+        </nav>
+    </header>
+
+    <section id="despre" class="content">
+        <h2>Despre noi</h2>
+        <p>Oferim ouă de prepeliță naturale, dintr-un cuibușor autentic, pentru un stil de viață sănătos și gustos.</p>
+    </section>
+
+    <section id="produse" class="content">
+        <h2>Produsele noastre</h2>
+        <p>Avem ouă proaspete de prepeliță, ambalate cu grijă.</p>
+        <button class="button">Comandă acum</button>
+    </section>
+
+    <section id="contact" class="content">
+        <h2>Contact</h2>
+        <p>Email: contact@cuibusordeprepelita.ro</p>
+    </section>
+</body>
+</html>
