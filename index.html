@@ -2,87 +2,69 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Cuibușor de Prepeliță</title>
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-    }
-    .top {
-      background: url('images/top_background.jpg') no-repeat center top;
-      background-size: cover;
-      text-align: center;
-      padding: 40px 20px 20px;
-    }
-    .top img {
-      width: 150px;
-    }
-    header {
-      color: #4b2e0c;
-      font-size: 2.5em;
-      font-weight: bold;
-      margin-top: 10px;
-    }
-    nav a {
-      margin: 0 15px;
-      text-decoration: none;
-      color: #4b2e0c;
-      font-weight: bold;
-      font-size: 1.1em;
-    }
-    main {
-      background: url('images/bottom_background.jpg') no-repeat center top;
-      background-size: cover;
-      padding: 60px 20px;
-      color: #3b2b20;
-    }
-    section {
-      background-color: rgba(255, 255, 255, 0.85);
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 700px;
-      border-radius: 12px;
-    }
-    h2 {
-      color: #3b2b20;
-    }
-    button {
-      background-color: #774d24;
-      color: white;
-      padding: 10px 20px;
-      border: none;
-      border-radius: 5px;
-      font-size: 1em;
-      cursor: pointer;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <title>Cuibușor de Prepeliță</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        header {
+            background-color: #a8e64e; /* verde */
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            font-weight: bold;
+            color: #5a3b1d;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            background-color: #f5e9dc;
+        }
+
+        #bottom-section {
+            background-image: url('images/bottom_background.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 300px;
+        }
+    </style>
 </head>
 <body>
-  <div class="top">
-    <img src="images/logo.png" alt="Cuibușor de Prepeliță">
-    <header>Cuibușor de Prepeliță</header>
-    <nav>
-      <a href="#despre">Despre</a>
-      <a href="#produse">Produse</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-  <main>
+    <header>
+        <img src="images/logo.png" alt="Cuibușor de Prepeliță" height="100">
+        <h1>Cuibușor de Prepeliță</h1>
+        <nav>
+            <a href="#despre">Despre</a>
+            <a href="#produse">Produse</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
     <section id="despre">
-      <h2>Despre noi</h2>
-      <p>Oferim ouă de prepeliță naturale, dintr-un cuibușor autentic, pentru un stil de viață sănătos și gustos.</p>
+        <h2>Despre noi</h2>
+        <p>Oferim ouă de prepeliță naturale, dintr-un cuibușor autentic, pentru un stil de viață sănătos și gustos.</p>
     </section>
+
     <section id="produse">
-      <h2>Produsele noastre</h2>
-      <p>Avem ouă proaspete de prepeliță, ambalate cu grijă.</p>
-      <button onclick="window.location.href='#contact'">Comandă acum</button>
+        <h2>Produsele noastre</h2>
+        <p>Avem ouă proaspete de prepeliță, ambalate cu grijă.</p>
+        <button>Comandă acum</button>
     </section>
+
     <section id="contact">
-      <h2>Contact</h2>
-      <p>Email: contact@cuibusordeprepelita.ro</p>
+        <h2>Contact</h2>
+        <p>Email: contact@cuibusordeprepelita.ro</p>
     </section>
-  </main>
+
+    <section id="bottom-section"></section>
 </body>
 </html>
