@@ -1,71 +1,121 @@
+
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cuibușor de Prepeliță</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            background-image: url('background.jpg');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-attachment: fixed;
-            font-family: Arial, sans-serif;
-            color: #3c2a15;
-            text-align: center;
-        }
-        header {
-            background-color: rgba(255, 255, 255, 0.85);
-            padding: 20px 0;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            font-weight: bold;
-            color: #5b3d1f;
-        }
-        section {
-            margin: 40px auto;
-            padding: 20px;
-            max-width: 800px;
-            background-color: rgba(255, 255, 255, 0.9);
-            border-radius: 8px;
-        }
-        button {
-            background-color: #7b4c20;
-            color: white;
-            border: none;
-            padding: 10px 20px;
-            margin-top: 10px;
-            cursor: pointer;
-            border-radius: 5px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cuibușor de Prepeliță</title>
+  <style>
+    body {
+      font-family: 'Georgia', serif;
+      background-color: #fffaf0;
+      color: #3b2f2f;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+    header {
+      background-color: #8b5e3c;
+      padding: 20px 20px 10px 20px;
+      color: white;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header img {
+      width: 160px;
+      margin-bottom: 5px;
+    }
+    header h1 {
+      font-size: 2.2em;
+      margin: 10px 0 5px 0;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: white;
+      font-weight: bold;
+      font-size: 1.1em;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    footer {
+      background-color: #e6d5b8;
+      padding: 20px;
+      font-size: 14px;
+    }
+
+    @media screen and (max-width: 600px) {
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  
+    button {
+      background-color: #8b5e3c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      margin: 10px;
+      font-size: 1em;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #734a30;
+    }
     </style>
+    
 </head>
 <body>
-    <header>
-        <h1>Cuibușor de Prepeliță</h1>
-        <nav>
-            <a href="#despre">Despre</a>
-            <a href="#produse">Produse</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
-    <section id="despre">
-        <h2>Despre noi</h2>
-        <p>Oferim ouă de prepeliță naturale, dintr-un cuibușor autentic, pentru un stil de viață sănătos și gustos.</p>
-    </section>
-    <section id="produse">
-        <h2>Produsele noastre</h2>
-        <p>Avem ouă proaspete de prepeliță, ambalate cu grijă.</p>
-        <button onclick="window.location.href='#contact'">Comandă acum</button>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: contact@cuibusordeprepelita.ro</p>
-    </section>
+
+<header>
+  <img src="images/logo.png" alt="Cuibușor de Prepeliță">
+  <h1>Cuibușor de Prepeliță</h1>
+  <nav>
+    <a href="#despre">Despre</a>
+    <a href="#produse">Produse</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="despre">
+  <h2>Despre noi</h2>
+  <p>Oferim ouă de prepeliță naturale, dintr-un cuibușor autentic, pentru un stil de viață sănătos și gustos.</p>
+</section>
+
+<section id="produse">
+  <h2>Produsele noastre</h2>
+  
+    <div>
+      <p>Avem ouă proaspete de prepeliță, ambalate cu grijă.</p>
+      <button onclick="window.location.href='#contact'">Comandă acum</button>
+    </div>
+    
+</section>
+
+<section id="contact">
+  <h2>Contact</h2>
+  
+    <p>Scrie-ne pe WhatsApp sau Instagram pentru comenzi și informații.</p>
+    <button onclick="window.open('https://wa.me/40712345678', '_blank')">WhatsApp</button>
+    <button onclick="window.open('https://instagram.com/cuibusor', '_blank')">Instagram</button>
+    
+</section>
+
+<footer>
+  &copy; 2025 Cuibușor de Prepeliță • Toate drepturile rezervate
+</footer>
+
 </body>
 </html>
