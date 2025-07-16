@@ -2,35 +2,68 @@
 <!DOCTYPE html>
 <html lang="ro">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Cuibușor de Prepeliță</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 </head>
 <body>
     <header>
-        <img src="images/logo.png" alt="Logo Cuibușor de Prepeliță" class="logo">
+        <img src="images/logo.png" alt="Logo Cuibușor de Prepeliță" class="logo" />
         <h1>Cuibușor de Prepeliță</h1>
         <nav>
             <button onclick="showSection('despre')">Despre</button>
             <button onclick="showSection('produse')">Produse</button>
             <button onclick="showSection('contact')">Contact</button>
+            <button onclick="showSection('comanda')">Comandă</button>
         </nav>
     </header>
 
     <main>
         <section id="despre" class="content-section">
             <h2>Despre noi</h2>
-            <p>Oferim ouă de prepeliță naturale, dintr-un cuibușor autentic, pentru un stil de viață sănătos și gustos.</p>
+            <p>Oferim ouă de prepeliță naturale, gustoase și sănătoase.</p>
         </section>
+
         <section id="produse" class="content-section">
-            <h2>Produsele noastre</h2>
-            <p>Avem ouă proaspete de prepeliță, ambalate cu grijă.</p>
-            <button class="cta">Comandă acum</button>
+            <h2>Produse</h2>
+            <p>Oferim ouă marinate simple și picante, ambalate cu grijă.</p>
         </section>
+
         <section id="contact" class="content-section">
             <h2>Contact</h2>
             <p>Email: contact@cuibusordeprepelita.ro</p>
+        </section>
+
+        <section id="comanda" class="content-section">
+            <h2>Formular de comandă</h2>
+            <form>
+                <label for="nume">Nume complet:</label>
+                <input type="text" id="nume" name="nume" required>
+
+                <label for="adresa">Adresă de livrare:</label>
+                <input type="text" id="adresa" name="adresa" required>
+
+                <label for="telefon">Telefon:</label>
+                <input type="tel" id="telefon" name="telefon" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="produs">Alege produsul:</label>
+                <select id="produs" name="produs">
+                    <option value="marinate">Ouă marinate simple</option>
+                    <option value="picante">Ouă marinate picante</option>
+                </select>
+
+                <label for="plata">Metodă de plată:</label>
+                <select id="plata" name="plata">
+                    <option value="ramburs">Plata la livrare</option>
+                    <option value="online">Plata online</option>
+                </select>
+
+                <button type="submit" class="cta">Trimite comanda</button>
+            </form>
         </section>
     </main>
 
@@ -42,7 +75,6 @@
             document.getElementById(id).style.display = 'block';
         }
 
-        // Ascundem toate secțiunile la început
         window.onload = () => {
             showSection('despre');
         };
