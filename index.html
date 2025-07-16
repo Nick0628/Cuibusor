@@ -27,7 +27,7 @@
 
         <section id="produse" class="content-section">
             <h2>Produse</h2>
-            <p>Oferim ouă marinate simple și picante, ambalate cu grijă.</p>
+            <p>Oferim ouă marinate simple și picante, ouă pentru consum sau incubat, și carne de prepeliță.</p>
         </section>
 
         <section id="contact" class="content-section">
@@ -50,11 +50,17 @@
                 <label for="email">Email:</label>
                 <input type="email" id="email" name="email" required>
 
-                <label for="produs">Alege produsul:</label>
+                <label for="produs">Selectează produsul:</label>
                 <select id="produs" name="produs">
-                    <option value="marinate">Ouă marinate simple</option>
-                    <option value="picante">Ouă marinate picante</option>
+                    <option value="oua_consum">Ouă de consum</option>
+                    <option value="oua_incubat">Ouă pentru incubat</option>
+                    <option value="oua_simple">Ouă marinate simple</option>
+                    <option value="oua_picante">Ouă marinate picante</option>
+                    <option value="carne">Carne de prepeliță pentru consum</option>
                 </select>
+
+                <label for="cantitate">Cantitate dorită:</label>
+                <input type="number" id="cantitate" name="cantitate" min="1" required>
 
                 <label for="plata">Metodă de plată:</label>
                 <select id="plata" name="plata">
