@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuibușor de Prepeliță</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Logo Cuibușor de Prepeliță" class="logo">
+        <h1>Cuibușor de Prepeliță</h1>
+        <nav>
+            <button onclick="showSection('despre')">Despre</button>
+            <button onclick="showSection('produse')">Produse</button>
+            <button onclick="showSection('contact')">Contact</button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="despre" class="content-section">
+            <h2>Despre noi</h2>
+            <p>Oferim ouă de prepeliță naturale, dintr-un cuibușor autentic, pentru un stil de viață sănătos și gustos.</p>
+        </section>
+        <section id="produse" class="content-section">
+            <h2>Produsele noastre</h2>
+            <p>Avem ouă proaspete de prepeliță, ambalate cu grijă.</p>
+            <button class="cta">Comandă acum</button>
+        </section>
+        <section id="contact" class="content-section">
+            <h2>Contact</h2>
+            <p>Email: contact@cuibusordeprepelita.ro</p>
+        </section>
+    </main>
+
+    <script>
+        function showSection(id) {
+            document.querySelectorAll('.content-section').forEach(section => {
+                section.style.display = 'none';
+            });
+            document.getElementById(id).style.display = 'block';
+        }
+
+        // Ascundem toate secțiunile la început
+        window.onload = () => {
+            showSection('despre');
+        };
+    </script>
+</body>
+</html>
